@@ -34,10 +34,19 @@ export NDK_HOME=path/to/unzipped/ndk
 
 ## 2. Build the example
 ```
-make -j
+make all
 ```
 
-## 3. Run it on an Android device
+## 3. Push the executable to Android device
+```
+adb push out/example <path/to>
+```
+
+## 4. Copy the gpuCounters.so into an apk
+
+## 5. Run the executable on adb shell
+
+## 6. Start tracing
 ```
 make test
 ```
